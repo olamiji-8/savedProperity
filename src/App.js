@@ -1,13 +1,10 @@
 import "./App.css";
-
-
-import SavedProperty from "./pages/dashboard/Saved-Property"
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-    
-      <SavedProperty/>
+      <Home />
     </>
   );
 }
