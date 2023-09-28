@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { savedProperty } from "../../data/savedProperty/data";
-import axios from "axios";
 import SavedCarousel from "./Saved-Carousel-Property";
-import BackButton from "../reusable-components/BackButton";
 
 const SavedProperty = () => {
   
