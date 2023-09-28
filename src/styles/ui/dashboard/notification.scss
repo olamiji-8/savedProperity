@@ -1,0 +1,123 @@
+.notification-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    h2 {
+        margin: 20px 0;
+    }
+}
+
+
+.notification-cont-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.notification-title-holder {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.notification-container-previcon {
+    span a {
+        font-size: 25px;
+        color: #4b5ffa;
+        font-weight: bold;
+    }
+}
+
+.notification-title-holder {
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.notification-cont-top a {
+    margin: 20px 0;
+    color: #4b5ffa;
+    font-size: 12px;
+}
+
+.notification-container_content {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #cccccc6d;
+}
+
+.notification-container_items {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.notification-container_items__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    background-color: rgba(255, 187, 0, 0.922);
+    height: 25px;
+    border-radius: 25px;
+    color: white;
+}
+
+.notification-container_items__title {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title__span {
+    color: #455980;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.title__p {
+    color: #ccccccde;
+    margin: 10px 0;
+}
+
+.view__container {
+    color: #4B5FFA;
+}
+
+.view-container a {
+    text-decoration: none;
+    color: #4B5FFA;
+    font-size: 12px;
+}
+
+.notification-container-items-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 50px;
+}
+
+
+
+@media (max-width:768px) {
+    .notification-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .notification-container-items__title {
+        padding-right: 40px;
+    }
+
+    .notification-container-items-content {
+        padding-left: 20px;
+    }
+}

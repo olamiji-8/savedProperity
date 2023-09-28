@@ -1,0 +1,133 @@
+@import '../_variables/variables';
+
+.due-container{
+    .due-section{
+        padding: 1.5rem;
+        &-text{
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 600;
+            color: #9f9f9f;
+            margin-bottom: 3rem;
+            @media screen and (min-width: 1000px) {
+                width: 680px;
+            }
+        }
+        &-form{
+            margin: auto;
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+            p{
+                @media screen and (min-width: 500px) {
+                    width: 450px;
+                    margin: auto;
+                }
+            }
+            input{
+                background-color: $tert-bg-color;
+                border: 0;
+                border-bottom: 1px solid $primary-text-color;
+                width: 100%;
+                padding: 0.5rem;
+                color: $primary-text-color;
+            }
+            input:focus{
+                outline: none;
+            }
+            &-file{
+                height: 3rem;
+                margin: 0.3rem 0;
+                button{
+                    width: 30%;
+                    height: inherit;
+                    border-radius: 0 5px 5px 0;
+                    background-color: $tert-bg-color;
+                    color: #4b5ffa;
+                    border: none;
+                    cursor: pointer;
+                    font-family: inherit;
+                }
+                input{
+                    width: 70%;
+                    border: 1px #ebf0ff solid;
+                    background-color: #FFFFFF;
+                    height: inherit;
+                    border-radius: 5px 0 0 5px;
+                    &::placeholder{
+                        color: #b2b2b2;
+                    }
+                }
+            }
+            &-select{
+                select{
+                    border: 0;
+                    width: 100%;
+                    border-bottom: 1px solid $primary-text-color;
+                    padding: 0.5rem;
+                    color: $secondary-text-color;
+                    cursor: pointer;
+                }
+            }
+            &-button{
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+                button{
+                    background-color:#4b5ffa;
+                    padding: 0.5rem 1rem;
+                    border-radius: 0%;
+                    font-weight: 700;
+                    border: 0;
+                    color: white;
+                    font-family: inherit;
+                }
+                span{
+                    color: #DF0000;
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.due-modal-container{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    .due-modal{
+        width: 85%;
+        padding: 1rem;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.25);
+        border-radius: 5px;
+        @media screen and (min-width: 500px) {
+            width: 350px;
+        }
+        p{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+            color: $primary-text-color;
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+        &-close{
+            float: right;
+            color: $primary-text-color;
+            width: 10px;
+        }
+    }
+}

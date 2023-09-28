@@ -1,0 +1,132 @@
+// Search Container
+.Searh_container {
+    width: 100%;
+    display: flex;
+
+    .Search__Property {
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+        width: 45%;
+    }
+
+
+    .Search__Property__Results {
+        display: flex;
+        margin-right: 50px;
+        width: 100%;
+    }
+
+    .Search__Property__Map {
+
+        width: auto;
+
+    }
+}
+
+
+// search card
+.Search-Card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+
+.Search_Card__Inner {
+    width: 100%;
+
+    img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+.Search__Card__Spacing {
+    width: 20px;
+}
+
+.Search__Text__Container {
+    padding: 0 10px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .Search__for__sale {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #cccccc5f;
+        padding-bottom: 10px;
+        font-weight: bold;
+
+        p {
+            color: #cccccc;
+        }
+    }
+
+}
+
+.Search__for__sale__description {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    p:nth-child(1) {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    span {
+        margin-top: 5px;
+        font-size: 12px;
+        color: #5c6e90;
+        font-weight: 500;
+    }
+
+    h4 {
+        margin: 20px 0;
+        color: #4b5ffa;
+    }
+
+    .Search__for__sale__desc__short {
+        padding: 10px 0;
+        display: flex;
+        border-top: 1px solid #cccccc5f;
+        align-items: center;
+    }
+}
+
+
+
+
+@media (max-width:768px) {
+    .Searh_container {
+        flex-direction: column;
+
+        .Search__Property {
+            width: 100%;
+        }
+
+        .Search__Property__Results {
+            display: flex;
+            flex-direction: column;
+            margin-right: 50px;
+            width: 100%;
+        }
+
+        .Search-Card {
+            width: 100%;
+        }
+
+        .Search__Card__Spacing {
+            display: none;
+            width: 20px;
+        }
+
+        .Search__Property__Map {
+
+            display: none
+        }
+    }
+}

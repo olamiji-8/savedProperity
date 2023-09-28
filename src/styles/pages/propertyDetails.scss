@@ -1,0 +1,115 @@
+// .property-details-wrapper::-webkit-scrollbar {
+//   // width: 5px !important;
+//   // color: red !important;
+//   display: none !important;
+
+// }
+.property-details-container {
+  display: flex;
+  .propertyDetails-nav-control {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  .property-details-wrapper {
+    @media screen and (min-width: 768px) {
+      margin-top: 50px;
+    }
+    margin-top: 90px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-y: hidden;
+    .property-section1 {
+      display: flex;
+      align-items: flex-start;
+      justify-items: flex-start;
+      margin-bottom: 20px;
+
+      .top-item {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        .left-arrow {
+          font-size: 30px;
+          color: #4b5ffa;
+        }
+        .text1 {
+          font-family: "Butler";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 150%;
+          color: #4b5ffa;
+          margin-left: 10px;
+        }
+      }
+    }
+    .property-section2 {
+      width: 100%;
+      border-radius: 8px;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      img {
+        width: 100% !important;
+      }
+    }
+    .property-section3 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.5rem /* 8px */;
+      margin-top: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ebf0ff;
+      @media only screen and (max-width: 751px) {
+        grid-template-columns: unset !important;
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+      }
+      .item1,
+      .item2 {
+        .item1a {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          .sub1 {
+            font-family: "Mulish";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            color: #c8cad4;
+          }
+          .sub2 {
+            font-family: "Mulish";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 150%;
+            color: #455980;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .property-section4 {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      .property-view-button {
+        padding: 1rem 5rem;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 150%;
+        color: white !important;
+        background-color: #4b5ffa;
+        margin-top: 20px;
+      }
+    }
+  }
+}

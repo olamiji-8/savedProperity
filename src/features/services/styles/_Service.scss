@@ -1,0 +1,239 @@
+@import '../../../styles/_variables/_variables.scss';
+@import '../../../styles/_variables/_mixins.scss';
+
+@mixin FlexAlignCenter($gap: 10px) {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+}
+@mixin ServiceGrid($lg-size: 167px, $lg-gap: 33px) {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 150px);
+    gap: 28px 12px;
+
+    @media (min-width: 576px) {
+        grid-template-columns: repeat(3, 150px);
+    }
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(4, 150px);
+    }
+    @media (min-width: 992px) {
+        grid-template-columns: repeat(5, $lg-size);
+        gap: 40px $lg-gap;
+    }
+}
+.Pointer {
+    cursor: pointer;
+}
+p {
+    color: $primary-text-color
+}
+nav {
+    @include FlexAlignCenter();
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+}
+.Profile {
+    display: none
+}
+.Profile-Auth {
+    display: none;
+}
+
+.Service-SearchForm {
+    @include FlexAlignCenter(20px);
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EBF0FF;
+    .Text-Area {
+        @include FlexAlignCenter(20px);
+        box-shadow: 0px 3px 10px rgba(128, 128, 128, 0.15);
+        border-radius: 5px;
+        padding: 8px 0px 8px 5px;
+        img {
+            width: 15px;
+        }
+        input, input:hover {
+            font-size: 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+    }
+    .RL {
+        @include FlexAlignCenter(20px);
+        div {
+            border-radius: 5px;
+            padding: 0px 15px;
+        }
+        .Rating-Container {
+            background-color: #EBF0FF;
+            border: none;
+        }
+        .Location-Container {
+            border: 1px solid #E6E6E6;
+        }
+        select, select:focus {
+            outline: none;
+            border: none;
+        }
+        .Rating {
+            padding-block: 9px;
+            background-color: #EBF0FF;
+            color: #4B5FFA;
+        }
+        .Location {
+            padding-block: 8px;
+            background-color: #FFFFFF;
+        }
+    }
+}
+.idk1 {
+    margin: 40px 0 60px 0;
+}
+.ServiceCard-List {
+    @include ServiceGrid();
+    .ServiceCard {
+        text-align: center;
+        height: 232px;
+        background-color: #F8F8FE;
+        padding-top: 20px;
+
+        img {
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+}
+.VendorCard-List {
+    @include ServiceGrid(170px, 29.25px);
+    .VendorCard {
+        position: relative;
+        text-align: center;
+        height: 232px;
+        box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.15);
+        padding-top: 15px;
+        p {
+            color: $secondary-text-color;
+            font-size: 14px;
+        }
+        .Vendor-Name {
+            margin-block: 10px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .Vendor-Rating {
+            margin-block: 10px;
+
+            span {
+                color: $highlight-color;
+                font-weight: 700;
+            }
+        }
+        .Vendor-Location {
+            font-weight: 600;
+        }
+        div {
+            padding-block: 40px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 99;
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            visibility: hidden;
+            transition: all 500ms ease-in-out;
+            .Call {
+                margin-block: 30px;
+            }
+            
+            a {
+                color: #4B5FFA;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 18px;
+                display: inline-block;
+                margin: 0;
+            }
+        }
+    }
+    .VendorCard:hover div {
+        visibility: visible;
+    }
+}
+@media (min-width: 375px) { 
+    .Text-Area {
+        min-width: 312px;
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .Service-SearchForm {
+        flex-direction: row;
+        .Text-Area {
+            min-width: 400px;
+            gap: 60px;
+            padding-block: 12px;
+            padding-left: 35px;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .Mobile-Only {
+        display: none
+    }
+    header {
+        box-shadow: 0px 15px 10px -15px rgba(128, 128, 128, 0.15); 
+    }
+    nav {
+        max-width: 90%;
+    }
+    .Profile {
+        @include FlexAlignCenter(30px);
+    }
+    .Profile-Auth {
+        @include FlexAlignCenter(60px);
+    }
+    .Service-SearchForm {
+        border: none;
+        padding-bottom: 0;
+        margin-top: 40px;
+        gap: 72px;
+        .Text-Area {
+            min-width: 485px;
+        }
+    }
+    .idk1 {
+        margin: 100px 0;
+    }
+    .ServiceCard-List {
+        .ServiceCard {
+            background-color: #F5FBFF;
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+
+}

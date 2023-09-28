@@ -1,0 +1,18 @@
+// Dashboard right sidebar Text Wrap styles
+
+.dash-right-sidbar-textwrap {
+    font-size: 11px;
+    color: #455980;
+    margin-top: 25px;
+    font-weight: 500;
+
+    div:nth-child(2) {
+        text-align: right;
+        color: #c4c4c4;
+    }
+
+    a {
+        text-decoration: none;
+        color: #4B5FFA;
+    }
+}

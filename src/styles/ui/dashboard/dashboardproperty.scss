@@ -1,0 +1,49 @@
+// =============Dashboard Property CSS
+.property-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.property-content__title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+
+
+    span:nth-child(1) {
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+
+    span:nth-child(2) {
+        a {
+            text-decoration: none;
+            color: #4B5FFA;
+            font-size: 12px;
+        }
+    }
+}
+
+
+
+.property-content-display {
+    display: flex;
+}
+
+
+.spacing {
+    width: 20px;
+}
+
+
+
+
+@media (max-width:768px) {
+    .property-content-display {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,33 @@
+.buy__Card__Container__List {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+
+  .buy__Card__Container_Box {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 20px;
+  }
+
+  .buy__Card__Container_Map {
+  }
+}
+
+@media (max-width: 768px) {
+  .buy__Card__Container__List {
+    flex-direction: column;
+
+    .buy__Card__Container_Box {
+      display: flex;
+      flex-direction: column;
+      margin-right: 50px;
+      width: 100%;
+    }
+
+    .buy__Card__Container_Map {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.dash-right-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #ebf0ff;
+  //   margin-right: 30px;
+}
+
+.dash-right-card__title {
+  display: flex;
+  justify-content: space-between;
+
+  span:nth-child(1) {
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+  }
+
+  span:nth-child(2) {
+    a {
+      text-decoration: none;
+      color: #4b5ffa;
+      font-size: 12px;
+    }
+  }
+}

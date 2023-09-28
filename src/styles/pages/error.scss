@@ -1,0 +1,53 @@
+.Error__Contain {
+  display: grid;
+  place-items: center;
+
+  height: 100vh;
+  color: $primary-text-color;
+  .Error__Container {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    gap: 24px;
+    p {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  .Error__Container--Title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  span {
+    color: $secondary-text-color;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .error__help {
+    line-height: 1.7;
+    a {
+      color: $secondary-text-color;
+    }
+  }
+  .error-code {
+    display: block;
+    margin-top: 50px;
+    color: #c8cad4;
+    font-size: 12px;
+  }
+  .btn {
+    padding: 12px 55px;
+  }
+}
+@media (max-width: 768px) {
+  .Error__Contain {
+    .Error__Container {
+      margin: 30px 0;
+      .Error__Container--Title {
+        font-size: 30px;
+      }
+    }
+  }
+}

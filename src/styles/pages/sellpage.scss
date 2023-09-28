@@ -1,0 +1,175 @@
+.sell_page {
+  background-color: #f5fbff;
+  header {
+    box-shadow: none;
+    background-position: 0;
+    background-repeat: no-repeat;
+    .sell_header {
+      max-width: 1198px;
+      margin: 0 auto;
+      padding: 100px 20px;
+      @include Flex;
+      justify-content: center;
+
+      .sell_header_text {
+        h1 {
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 48px;
+          margin-bottom: 24px;
+          span {
+            color: $highlight-color;
+          }
+        }
+        .mobile {
+          @media (min-width: 769px) {
+            display: none;
+          }
+        }
+        .large-screen {
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+      }
+      .sell_header_image {
+        position: relative;
+        &::before {
+          content: "";
+          background-image: linear-gradient(c2dcff 100%);
+        }
+      }
+      @media (max-width: 914px) {
+        flex-direction: column-reverse;
+        gap: 30px;
+        img {
+          width: 80vw;
+        }
+      }
+    }
+  }
+  .section {
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    padding: 100px 20px;
+    height: 700px;
+    .section1 {
+      h4 {
+        font-size: 24px;
+        color: #17294d;
+        margin-bottom: 35px;
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+         @media (max-width: 1050px) and (min-width: 769px) {
+          text-align: center;
+        }
+        span {
+          color: #4b5ffa;
+        }
+      }
+      max-width: 1198px;
+      margin: 0 auto;
+
+      .minicards {
+        @include Flex;
+        justify-content: center;
+        gap: 100px;
+        margin-bottom: 100px;
+        @media (max-width: 1050px) and (min-width: 769px) {
+          gap: 10px !important;
+        }
+        .mobile {
+          @media (min-width: 769px) {
+            display: none !important;
+          }
+        }
+        .minicard {
+          text-align: center;
+          p {
+            margin-top: 30px;
+          }
+          .mobile {
+            @media (min-width: 769px) {
+              display: none !important;
+            }
+          }
+          .large-screen {
+            @media (max-width: 768px) {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .right {
+        // text-align: center;
+        width: 100%;
+        @include Flex;
+        justify-content: center;
+        flex-direction: column;
+        .btn {
+          width: 170px;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      height: 100%;
+      background-image: none !important;
+
+      .section1 {
+        .minicards {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .why_lease {
+    padding: 120px 20px;
+    text-align: center;
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    .details_cards {
+      margin-top: 80px;
+      @include Flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 180px;
+      @media (max-width: 1050px) and (min-width: 769px) {
+          gap: 70px !important;
+        }
+      .mobile {
+        @media (min-width: 769px) {
+          display: none !important;
+        }
+      }
+      .large-screen {
+        @media (max-width: 768px) {
+          display: none !important;
+        }
+      }
+      .detail_card {
+        img {
+          height: 140px;
+        }
+        h4 {
+          font-size: 18px;
+          font-weight: 700;
+        }
+        width: 200px;
+        @include Flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+      }
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import "./_variables/mixins";
+@import "./_variables/variables";
+@import "./_variables/animations";
+@import "./layout/sidebar";
+@import "./layout/navbar.scss";
+@import "./pages/landing.scss";
+@import "./pages/login.scss";
+@import "./pages/error.scss";
+@import "./pages/serviceprovider.scss";
+@import "./pages/upload.scss";
+@import "./pages/lease_sell.scss";
+@import "./pages/subscribe.scss";
+@import "./pages/saved-property.scss";
+@import "./pages/landing.scss";
+@import "./pages/about.scss";
+@import "./pages/receipts.scss";
+@import "./layout/dashboardNavbar.scss";
+@import "./pages/sellpage.scss";
+@import "./pages/referral.scss";
+@import "./pages/draft-empty.scss";
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Layout__Constraints {
+  @include Constraints;
+}
+
+.btn {
+  @include Button;
+}
+
+.card-component {
+  @include Card;
+  border: 0.1px solid #ccc;
+}
+
+.shadow-card-component {
+  @include Shadow-Card(#ffffff);
+  border: 0.1px solid #ccc;
+}
+
+.container-component {
+  @include Container;
+}
+
+.shadow-container-component {
+  @include Shadow-Container;
+}
+
+.modal-overlay {
+  @include Modal-Overlay;
+}
+
+.modal-container {
+  @include Modal-Container;
+}

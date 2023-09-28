@@ -1,0 +1,114 @@
+@import "../_variables/variables";
+
+.faq-container {
+  color: $primary-text-color;
+  background-color: $tert-bg-color;
+  h4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $secondary-text-color;
+  }
+  p {
+    color: $secondary-text-color;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  .faq-header {
+    padding: 3rem 1rem;
+    p {
+      font-weight: 600;
+    }
+    &-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+      }
+    }
+    form div {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0.5rem;
+      background-color: $secondary-bg-color;
+      width: 280px;
+      box-shadow: 0px 3px 10px rgba(128, 128, 128, 0.15);
+      border-radius: 5px;
+      @media screen and (min-width: 500px) {
+        width: 400px;
+      }
+      input {
+        border: 0;
+        background-color: inherit;
+        font-family: inherit;
+        min-width: 60%;
+        &::placeholder {
+          font-size: 16px;
+          font-weight: 600;
+          color: $highlight-color;
+          line-height: 20px;
+        }
+      }
+      input:focus {
+        outline: none;
+      }
+    }
+  }
+  .faq-info-container {
+    background-color: $primary-bg-color;
+    padding-bottom: 1.5rem;
+    .faq-info {
+      padding: 2.5rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      @media screen and (min-width: 800px) {
+        width: 95%;
+        margin: auto;
+      }
+      @media screen and (min-width: 1100px) {
+        width: 90%;
+        margin: auto;
+      }
+      @media screen and (min-width: 1300px) {
+        width: 80%;
+        margin: auto;
+      }
+      &-article {
+        width: 285px;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+        flex-direction: column;
+      }
+      h4 {
+        font-weight: 600;
+      }
+    }
+    .faq-last {
+      width: 80%;
+      background-color: $tert-bg-color;
+      margin: 1rem auto 2.5rem auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      align-items: center;
+      border-radius: 11.767px;
+      @media screen and (min-width: 800px) {
+        width: 70%;
+      }
+      h4 {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

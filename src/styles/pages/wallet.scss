@@ -1,0 +1,160 @@
+.wallet-container {
+    display: flex;
+}
+.wallet-wrapper {
+    margin-left: 42px;
+}
+.wallet-title {
+    margin: 72px 0 20px 0px;
+    font-family: Butler;
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+color: #17294D;
+}
+.walletDiv {
+    position: relative;
+    width: 788px;
+    height: 172px;
+    background: #EBF0FF;
+    border-radius: 10px;
+  margin-bottom: 32px;
+}
+.wallet-text {
+    width: 417px;
+height: 108px;
+color: #455980;
+font-family: 'Butler';
+font-weight: 700;
+font-size: 24px;
+padding: 32px 0 32px 20px;
+}
+.wallet-img {
+    position: absolute;
+  right: 22px;
+  top: -40px;
+}
+.wallet-options {
+    display: flex;
+}
+.first-wallet-text {
+    font-family: 'Mulish';
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+margin-bottom: 11px;
+color: #455980;
+}
+.first-wallet-button {
+    width: 264px;
+    height: 83px;
+    color: #FFFFFF;
+    background: #4B5FFA;
+border-radius: 5px;
+border: #4B5FFA 1px solid;
+// margin-left: 24px;
+}
+.second-wallet {
+    margin-left: 24px;
+}
+
+.wallet-trans-subtitle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+.wallet-trans {
+    font-family: 'Mulish', sans-serif;
+font-weight: 800;
+font-size: 14px;
+line-height: 18px;
+color: #455980;
+
+}
+.wallet-trans-view {
+    display: flex;
+    margin-right: 150px;
+
+}
+.view-trans {
+    font-family: 'Poppins', sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+color: #4B5FFA;
+margin-right: 5px;
+}
+.wallet-svg {
+    margin: 3px 0 0 5px;
+}
+
+// .wallet-trans-list {
+//     display: flex;
+//     font-family: 'Mulish', sans-serif;
+// }
+.wallet-transDiv {
+    display: flex;
+    font-family: 'Mulish', sans-serif;
+}
+.wallet-trans-svg {
+    margin-top: 32px;
+}
+.trans-text {
+    margin-top: 26px;
+}
+.trans-date {
+    margin-bottom: 4px;
+}
+.wallet-processing {
+    width: 84px;
+height: 28px;
+// background-color: teal;
+margin: 28px 46px 0 46px;
+box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.15);
+background: #EBF0FF;
+border-radius: 5px;
+text-align: center;
+cursor: pointer;
+}
+.processing-text {
+    width: 64px;
+height: 18px;
+color: #4B5FFA;
+text-align: center;
+font-family: 'Mulish', sans-serif;
+font-weight: 600;
+font-size: 12px;
+line-height: 150%;
+margin: 5px;
+}
+.wallet-price {
+    margin-top: 32px;
+    font-family: 'Mulish', sans-serif;
+font-size: 12px;
+font-weight: 700;
+line-height: 18px;
+color: #20C78B;
+}
+.completed-text {
+    color: #20C78B;
+    width: 64px;
+height: 18px;
+text-align: center;
+font-family: 'Mulish', sans-serif;
+font-weight: 600;
+font-size: 12px;
+line-height: 150%;
+margin: 5px;
+
+}
+.failed-text {
+    color: #F80E0E;
+    width: 64px;
+height: 18px;
+text-align: center;
+font-family: 'Mulish', sans-serif;
+font-weight: 600;
+font-size: 12px;
+line-height: 150%;
+margin: 5px;
+}

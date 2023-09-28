@@ -1,0 +1,36 @@
+.sorting__container {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: 600;
+
+    .sortByClassified {
+        display: flex;
+        gap: 0.5em;
+        align-items: center;
+        flex-direction: row;
+        font-weight: 500;
+
+        select {
+            cursor: pointer;
+        }
+
+        #sort {
+            border: none;
+            outline: none;
+            font-weight: bold;
+        }
+    }
+
+    .sort__layout__item {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        font-weight: 500;
+        padding: 1em 0;
+
+        h4 {
+            cursor: pointer;
+        }
+    }
+}

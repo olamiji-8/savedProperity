@@ -1,0 +1,492 @@
+@import "../_variables/variables";
+
+.walletSub-mobile-nav{
+    display: none;
+    @media screen and (max-width:768px) {
+        display: block;
+    }
+}
+
+.walletSub{
+    display: flex;
+    font-family: "Mulish";
+    &-main{
+        border-left: 1px solid $tert-bg-color;
+        flex: 1;
+        &-nav{
+            display: flex;
+            gap: 2rem;
+            justify-content: flex-start;
+            cursor: pointer;
+            padding: 1rem;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 150%;
+            p{
+                padding: 0.5rem;
+                color: $primary-text-color;
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+            .back{
+                @media screen and (max-width: 768px){
+                    display: block !important;
+                }
+            }
+            .active{
+                color: $highlight-color !important;
+                border-bottom: 4px solid blue;
+            }
+        }
+        &-sub{
+            display: flex;
+            gap: 2rem;
+            padding: 0 1rem 0 1rem;
+            cursor: pointer;
+            p{
+                padding: 1rem;
+            }
+            .active-sub{
+                background-color: #F5FBFF;
+                border-width: 1px 1px 0px 1px;
+                border-style: solid;
+                border-color: #C8CAD4;
+                border-radius: 5px 5px 0px 0px;
+            }
+        }
+        &-container{
+            display: flex;
+            border-top: 1px solid $tert-bg-color;
+            .transact{
+                flex: 2;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                border-right: 1px solid $tert-bg-color;
+                .cards-section{
+                    display: flex;
+                    overflow-x:auto;
+                    gap: 0.5rem;
+                    padding: 1rem;
+                    .card{
+                        border-radius: 5px;
+                        width: 240px;
+                        padding:10px;
+                        box-shadow: rgba(0,0,0,0.05) 0 3px 5px 8px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.5rem;
+                        .flex{
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        section{
+                            width: 85%;
+                        }
+                    }
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    div{
+                        .icons-input{
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            select, input{
+                                padding-left: 2rem;
+                            }
+                            .to-left{
+                                position: absolute;
+                                left: 10px;
+                            }
+                            .to-right{
+                                position: absolute;
+                                right: 10px;
+                            }
+                        }
+                        input, select{
+                            width: 100%;
+                            height: 2.4rem;
+                            padding-left: 10px;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 150%;
+                            font-family: "Mulish";
+                            border-radius: 5px;
+                            background-color: white;
+                            color: $primary-text-color;
+                            border: $tert-bg-color 1px solid;
+                            &:focus{
+                                outline: none;
+                            }
+                            &::placeholder{
+                                font-family: "Mulish";
+                            }
+                        }
+                        .switch-account{
+                            text-align: right;
+                            color: #20C78B;
+                            margin-top: 0.5rem;
+                            vertical-align: middle;
+                            font-weight: bold;
+                            span{
+                                cursor:pointer;
+                            }
+                        }
+                        label, .add-card-flex, .label-flex {
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: $primary-text-color;
+                        }
+                        .add-card-flex{
+                            display: flex;
+                            align-content: center;
+                            justify-content: space-between;
+                            .add-card{
+                                padding: 0.5rem;
+                                border-radius: 5px;
+                                border:  2px dashed $primary-text-color;
+                                cursor: pointer;
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                            }
+                        }
+                        .label-flex{
+                            width: 100%;
+                            .float-left{
+                                float: left;
+                            }
+                            .float-right{
+                                float: right;
+                            }
+                        }
+                    }
+                    .btn-container{
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 2rem;
+                        align-items: center;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 150%;
+                        .wallet-btn{
+                            cursor: pointer;
+                            background-color: $highlight-color;
+                            color: $primary-bg-color;
+                            padding: 1rem 2rem;
+                            border: 0;
+                            font-family: inherit;
+                        }
+                        .previous{
+                            color: #7D8BFA;
+                        }
+                    }
+                }
+                ol{
+                    padding: 2rem;
+                    li{
+                        list-style: decimal;
+                        line-height: 32px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #808080;
+                    }
+                }
+                .payment-steps{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    h3{
+                        font-size: 20px;
+                        line-height: 32px;
+                    }
+                    div{
+                        display: flex;
+                        gap: 1.5rem;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 32px;
+                        span{
+                            color: #808080;
+                            font-size: 16px;
+                        }
+                        p{
+                            flex: 1;
+                            color: $primary-text-color;
+                        }   
+                    }
+                }
+            }
+            .wallet-bank-info{
+                padding: 1rem;
+                flex: 1;
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+// STYLING OF THE WALLET BANK INFO COMPONENT
+.bank-info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    .child{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+    .balance{
+        background-color: $highlight-color;
+        background-image: url(../../assets/dashboard_img/wallet/accountBalance.svg);
+        background-size: cover;
+        color: white;
+        padding: 2rem 1rem;
+    }
+    .bank-information{
+        background-color: beige;
+        background-size: cover;
+        background-image: url(../../assets/dashboard_img/wallet/cardInformation.png);
+        p{
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 15px;
+            .title{
+                color: #808080;
+            }
+            .info{
+                color: $highlight-color;
+            }
+        }
+    }
+    .transactions{
+        background-color: $tert-bg-color;
+        article{
+            display: flex;
+            justify-content: space-between;
+            h3{
+                font-family: "Butler";
+                color: $primary-text-color;
+                font-size: 18px;
+                line-height: 27px;
+                font-weight: 700;
+            }
+            span{
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 700;
+                font-family: "Poppins";
+                color: $highlight-color;
+            }
+        }
+        .transaction{
+            p{
+                text-align: right;
+            }
+        }
+    }
+}
+
+// STYLING OF WALLET MODAL
+.wallet-modal-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .wallet-modal{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: "Mulish";
+        position: absolute;
+        width: 500px;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: rgba(0,0,0,0.05) 0 3px 10px 12px;
+        @media screen and (max-width:600px){
+            width: 85%;
+            padding: 1rem;
+            gap: 0.7rem;
+        }
+        &-amount p{
+            color: $secondary-text-color;
+            font-size: 24px !important;
+            line-height: 30px;
+            font-weight: 600;
+            @media screen and (max-width : 600px) {
+                font-size: 18px;
+            }
+        }
+        .flex-div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            p{
+                font-size: 16px;
+                text-align:right;
+            }
+        }
+        .wallet-account-transfer{
+            text-align: center;
+            background-color: $tert-bg-color;
+            padding: 1rem;
+            width: 90%;
+            margin: auto;
+            .flex-icon{
+                justify-content: center;
+                margin: 1rem 0;
+            }
+        }
+        .message{
+            text-align: center;
+        }
+        &-btn{
+            margin-top: 0.5rem;
+            display: flex;
+            justify-content: right;
+            @media screen and (max-width:600px) {
+                justify-content: center;
+            }
+        }
+        .btn{
+            padding:0.7rem 1.7rem;
+            background-color: $highlight-color;
+            cursor: pointer;
+            color: white;
+            border: none;
+            font: inherit;
+        }
+        .change-method{
+            color: $highlight-color;
+            cursor: pointer;
+        }
+        .btn-disabled{
+            background-color: #808080;
+        }
+        .flex-status{
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            .flex-status-dash{
+                height: 2px;
+                background-color: #808080;
+                flex: 0.5;
+            }
+            .flex-status-icon{
+                width: 70px;
+            }
+        }
+        .show-account{
+            text-align: center;
+            &-btn{
+                padding: 0.5rem;
+                background-color: white;
+            }
+        }
+        .flex-payment-btns{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media screen and (max-width:700px) {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+        .OTP-inputs{
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 0.5rem;
+            input{
+                width: 2.5rem;
+                height: 2.5rem;
+                background-color: $tert-bg-color;
+                border: none;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 21px;
+                font-size: 1.5rem;
+                
+            }
+        }
+        .new-card-form{
+            div p{
+                display: flex;
+                align-items: center;
+                position: relative;
+                input{
+                    flex: 1;
+                }
+                span{
+                    position: absolute;
+                    right: 1rem;
+                }
+            }
+            section{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0.5rem;
+            }
+        }
+    }
+}
+
+.pending, .success, .failed{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+}
+.pending{
+    color: $highlight-color;
+}
+.success{
+    color: #20C78B;
+}
+.failed{
+    color: #DF0000;
+}
+.grey{
+    color: #808080;
+    font-weight: 600;
+}
+
+.wallet-icon{
+    color: $primary-text-color;
+    cursor: pointer;
+}
+
+.flex-icon{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.wallet-text-right{
+    text-align: right;
+}

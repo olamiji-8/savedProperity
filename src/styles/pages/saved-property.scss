@@ -1,0 +1,122 @@
+%icon {
+  position: absolute;
+  top: 20%;
+  cursor: pointer;
+}
+
+.saved-property {
+  margin: 0 auto;
+  width: 75%;
+
+  .saved-h2 {
+    margin-left: 0;
+  }
+
+  .saved-top-line {
+    margin: -0.5rem 0 2rem 0;
+  }
+
+  .search-box {
+    position: relative;
+
+    .search-bar {
+      margin: 0 auto;
+      display: flex;
+      width: 100%;
+      padding: 1rem;
+      outline: none;
+      border-radius: 5px;
+      text-align: center;
+      margin: 2rem auto;
+      border: 1px solid $imgColor;
+      background: $plainWhite;
+
+      @media screen and (min-width: 600px) {
+        border: none;
+        width: 80%;
+        background: $specialInputBcg;
+      }
+    }
+
+    .search-icon {
+      position: absolute;
+      top: 25%;
+      left: 15%;
+    }
+  }
+
+  &-house {
+    width: 100%;
+  }
+
+  .heart-icon {
+    position: absolute;
+    top: 4%;
+    right: 6%;
+    //z-index: 99;
+  }
+
+  .left-arrow {
+    @extend %icon;
+    left: 3%;
+  }
+
+  .right-arrow {
+    @extend %icon;
+    right: 7.5%;
+  }
+
+  @media screen and (min-width:1000px) {
+    width:90%;
+  }
+}
+.saved-property-all {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  font-weight: $constant-weight;
+  font-size: 0.9rem;
+  .saved-property-each {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 11px;
+    position: relative;
+
+    &-price {
+      color: $linkColor;
+      margin-bottom: 1rem;
+    }
+
+    &-properties {
+      margin: 1rem auto;
+    }
+
+    .saved-flex {
+      justify-content: space-between;
+
+      p {
+        color: #cccccc;
+      }
+    }
+
+    .saved-property-text {
+      margin-inline: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .saved-property-all {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .saved-property-all {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .saved-property-all {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

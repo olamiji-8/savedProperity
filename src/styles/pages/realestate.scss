@@ -1,0 +1,56 @@
+@import '../_variables/variables';
+
+.real-estate-container{
+    color: $primary-text-color;
+    background-color: $tert-bg-color;
+    p{
+        color: $primary-text-color; 
+        font-weight: 600;
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .real-estate-header{
+        padding: 5rem 1rem;
+        background-color: $tert-bg-color;
+        display: flex;
+        flex-direction: column;
+        gap: 1.7rem;
+        align-items: center;
+        text-align: center;
+        h1{
+            line-height: 48px;
+            font-size: 40px;
+            font-weight: 700;
+        }
+    }
+    
+    .real-estate-section{
+        padding: 4.5rem 0;
+        background-color: $primary-bg-color;
+        h2{
+            margin-left: 5rem;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &-flex{
+            margin: 3.5rem auto;
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .real-estate-box{
+                text-align: center;
+                div{
+                    width: 170px;
+                    height: 190px;
+                    background: $primary-bg-color;
+                    box-shadow: 4px 30px 49px rgba(0, 0, 0, 0.25);
+                }
+                p{
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+}

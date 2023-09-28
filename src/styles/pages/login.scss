@@ -1,0 +1,142 @@
+.account {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  * {
+    color: $primary-text-color;
+  }
+
+  .form-card {
+    width: 368px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding-bottom: 10px;
+    .span {
+      font-weight: 600;
+      margin: 0 auto;
+      font-size: 12px;
+      line-height: 150%;
+      text-align: center;
+      margin-bottom: 30px;
+      width: 80%;
+      a {
+        color: $highlight-color;
+        padding: 0 10px;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 240px;
+      margin: 0 auto;
+      transition: all 5000ms ease-out;
+      p {
+        align-self: flex-end;
+        a {
+          color: $highlight-color;
+        }
+      }
+
+      input[type="submit"] {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        padding: 10px 61px;
+        width: 170px;
+      }
+      input[type="submit"]:focus {
+        border-radius: 0px;
+        outline: none;
+      }
+      .form--error {
+        color: #df0000;
+
+        text-align: start;
+        padding: 4px;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: all 500ms ease-out;
+        font-size: 0px;
+      }
+      .form--error__active {
+        font-size: 11px;
+        opacity: 1;
+        transform: translateX(0%);
+      }
+      .policy {
+        p {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 150%;
+        }
+        span {
+          color: $highlight-color;
+        }
+      }
+      .btn {
+        padding: 10px 61px;
+      }
+      .password-requirement {
+        font-size: 10px;
+        line-height: 150%;
+        color: #c8cad4;
+        text-align: start;
+      }
+    }
+
+    .head {
+      height: 44px;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+      padding: 14px;
+      margin-bottom: 30px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    input {
+      border: none;
+      border-bottom: 1px solid #c8cad4;
+      padding: 7px;
+      width: 233px;
+      color: $secondary-text-color;
+    }
+    input:focus {
+      outline: 1px solid #c8cad4;
+      border-radius: 5px;
+      border: none;
+    }
+    input::placeholder {
+      color: $secondary-text-color;
+    }
+  }
+  .or {
+    margin: 26px 32px;
+    color: $primary-text-color;
+    position: relative;
+  }
+  .or::before,
+  .or::after {
+    content: "";
+    border-bottom: 1px solid #c8cad4;
+    width: 40%;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    // left: 0;
+  }
+  .or::before {
+    left: 0;
+  }
+  .or::after {
+    right: 0;
+  }
+  .btn {
+    gap: 30px;
+    margin: 10px auto;
+  }
+}

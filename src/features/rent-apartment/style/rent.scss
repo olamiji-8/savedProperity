@@ -1,0 +1,145 @@
+.Rent__Property__Navigation {
+  padding: 1em 0;
+}
+
+.Rent__Property__Navigation__Column {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 200px 4fr;
+  gap: 1em;
+  justify-content: center;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.Rent__Property__Navigation__Search {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  padding: 0.4em;
+
+  input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.2;
+    outline: none;
+  }
+}
+
+.Rent__Property__Navigation__Search__Item {
+  p {
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+  }
+
+  h4 {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    gap: 0.3em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .bb {
+    grid-column: 1/-1;
+  }
+}
+
+.Rent__Property__Navigation__Search__Filter {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2em 1em;
+  //   padding: 0.5em;
+
+  .Rent__Property__Navigation__Search__Filter__Column {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    padding: 0.5em 1.5em;
+
+    .Price__Filter {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      font-size: 13px;
+      line-height: 1.2;
+      color: #333;
+      font-weight: 500;
+      cursor: pointer;
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.sorting__container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-weight: 600;
+
+  .sortByClassified {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    flex-direction: row;
+    font-weight: 500;
+
+    select {
+      cursor: pointer;
+    }
+
+    #sort {
+      border: none;
+      outline: none;
+      font-weight: bold;
+    }
+  }
+
+  .sort__layout__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: 500;
+    padding: 1em 0;
+
+    h4 {
+      cursor: pointer;
+    }
+  }
+}
+
+.Rent__Card__Container__Grid {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  margin: 1em 0;
+  gap: 2em;
+  @media (max-width: 768px) {
+    grid-template-columns: 100%;
+    .Rent__Card__Container_map {
+      display: none;
+    }
+  }
+
+  .Rent__Card__Container_Box {
+    display: grid;
+    gap: 2rem;
+  }
+  .Rent__Card__Container_Box_column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+}

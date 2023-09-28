@@ -1,0 +1,343 @@
+%profileImg{
+   margin: $paraStyle;
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+}
+
+
+.service-provider{
+   margin: 0 auto;
+   padding: 0;
+   width: 100%;
+
+   &-h2{
+      margin: 2rem;
+   }
+
+   &-img{
+      @extend %profileImg;
+      background-color: $imgColor;
+
+   &-profile{
+      @extend %profileImg;
+      object-fit: cover;
+      width:5.5rem;
+      zoom: 100%;
+   }
+      
+   }
+   .name{
+      font-size: $mainFont;
+      font-weight: $constant-weight;
+      color: $thickBlack;
+      margin-bottom: .2rem;
+      
+   }
+   &-center
+ {
+      text-align: center;
+
+      p{
+         margin: .5rem auto;
+         line-height: 1.5rem;
+         
+      }
+
+      
+   }
+      .top-p{
+         font-weight: 400;
+      }
+
+   &-extreme-bottom-container{
+      margin: 0 auto;
+      text-align: center;
+      width: 85%;
+      display: grid;
+      margin-left: 4rem;
+      gap: .5rem;
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: -2.5rem;
+   }
+
+   &-first-p{
+      margin: $paraStyle;
+      font-size: $mainFont;
+      color: $thickBlack;
+   }
+   &-second-p{
+      margin: $paraStyle;
+      color:darken($imgColor, 60%);
+      font-size: $mainFont;
+   }
+
+   &-link{
+      font-weight: $constant-weight;
+      color:$linkColor;
+      cursor: pointer;
+      padding-inline: .5rem;
+   }
+
+
+   &-input{
+      width: 100%;
+      height: 3rem;
+      margin-bottom: 1.5rem;
+      border:none;
+      border-bottom: 1px solid #17294d;
+      background-color:#f3f7ff;
+   }
+   
+   &-btn{
+      background-color: $linkColor;
+      color:$plainWhite;
+      font-size: 1rem;
+   }
+
+   .url-p{
+      font-weight: $constant-weight;
+      color: #455980;
+      font-size: 0.9rem;
+   } 
+
+   .url-input{
+      margin: 0 auto;
+      width: 89%;
+      margin-inline: 1.5rem;
+      border: none;
+      background:$specialInputBcg;
+      padding: 2rem;
+      border-radius: 11px;
+   }
+   .url-combo{
+      position: relative;
+   }
+   .url-copy-icon{
+      position: absolute;
+      right: 10%;
+      top: 30%;
+
+   }
+   .check-mark{
+      position: absolute;
+      top: 45%;
+      font-size:1.3rem;
+
+   }
+   .upload-p{
+      color: $thickBlack;
+      font-weight:500 ;
+   }
+
+   .upload-paragraph{
+      font-size: .8rem;
+   }
+
+   .upload-combo{
+      position: relative;
+      display: flex;
+   }
+
+   .upload-input{
+      margin-top:1rem;
+      border: 1px solid $specialInputBcg;
+      border-right: none;
+      border-radius: 5px;
+      width: 100%;
+      padding: 1.5rem;
+   }
+   .upload-btn{
+      position: absolute;
+      background-color: $specialInputBcg;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding: 1.55rem;
+      font-weight: $constant-weight;
+      border: none;
+      bottom: 0;
+      right: 0;
+      color: $linkColor;
+      cursor: pointer;
+
+   }
+
+   &-inline{
+      margin: 0 auto;
+      margin-inline: 2rem;
+   }
+
+   &-flex{
+      display: flex;
+      justify-content:space-between ;
+      align-items: flex-end;
+      margin: 1.5rem 2rem;
+      
+
+   }
+   &-top-down{
+      margin:1rem auto;
+
+      .address{
+         padding: .5rem 0;
+      }
+   }
+
+   &-container-box{
+      height:70px ;
+      width:80px ;
+      background-color:$imgColor;
+      }
+}
+
+.serviceP-bottom{
+   margin-left: -2rem;
+}
+
+.min-show{
+   display: none;
+}
+
+%line{
+   height: .025rem;
+   background-color: #ebf0ff;
+   margin: 0 auto;
+
+}
+
+.short-line{
+   @extend %line;
+   width: 174px;
+   
+}
+.long-line{
+   width:auto;
+   @extend %line
+}
+
+.trash-img{
+   text-align: center;
+   padding: .3rem;
+   background-color: $specialInputBcg;
+   border-radius: 100px;
+   cursor: pointer;
+}
+input{
+   outline: none;
+}
+
+.copied-msg{
+   float: right;
+   padding-right: 2rem;
+   color: green;
+   font-weight: $constant-weight;
+}
+
+@media screen and (min-width:900px) {
+   
+   .min-none{
+      display: none;
+   }
+   .min-show{
+      display: block;
+   }
+
+   .long-line{
+      width: 90%;
+   }
+   .short-line{
+      width: 90%;
+   }
+    .flex-direction{
+      display: flex;
+      justify-self: space-evenly;
+      align-items: flex-start;
+      flex-direction: row-reverse;
+   }
+
+   .top-p{
+      font-size: .8rem;
+      margin-left: 1rem;
+   }
+
+   .service-provider-extreme-bottom-container{
+      display: flex;
+   
+   }
+   .input-flex{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;     
+     
+   }
+   .service-provider-btn{
+      float:right;
+      width: 30%;
+
+   }
+   .more-top-down{
+      margin-top: 1.5rem ;
+   }
+   .input-number{
+      width: 60%;
+   }
+
+}
+
+//? Trash Message
+
+.trash-full-msg{
+   position: absolute;
+   text-align: center;
+   left: 25%;
+   right: 30%;
+   width: 100%;
+   top: 60rem;
+   margin: 0 auto;
+}
+.trash-msg{
+   position: relative;
+   text-align: center;
+   padding-top: 2rem;
+   padding-bottom: 10rem;
+   border-radius: 11px;
+   background-color: $plainWhite;
+   width: 100%;
+   
+   .trash-right{
+      position: absolute;
+      right: 5%;
+      bottom: 10%;
+      
+
+      .delete{
+         color:$plainWhite;
+         background-color:$linkColor;
+         margin-left: 1rem;
+         cursor: pointer;
+          border:none;
+          padding: .8rem 2.5rem;
+          font-weight: $constant-weight;
+          
+      }
+
+      .dont-delete{
+          background-color:$plainWhite;
+          color: $linkColor;
+          cursor: pointer;
+          border:transparent;
+          padding: .8rem;
+          font-weight: $constant-weight;
+      }
+   }
+}
+
+@media screen and (min-width:900px) {
+   .trash-full-msg{
+      top: 45rem;
+      width:60% ;
+   }
+}
+
+
+

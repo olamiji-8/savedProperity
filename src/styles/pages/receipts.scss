@@ -1,0 +1,58 @@
+
+.flex-receipts{
+   width: auto;
+   padding: 1rem 3rem;
+   display: flex;
+   justify-content: space-between;
+   font-weight: $constant-weight;
+
+   p,
+   a{
+   color: $linkColor;
+   max-width:200px;
+   }
+
+   h5{
+      color: $imgColor
+   }
+}
+
+@media screen and (min-width:800px) {
+   .long-line{
+   margin-left: 2rem;
+   }
+}
+@media screen and (max-width:800px) {   
+   .receipts-line{
+      margin-right: 0%;
+      margin-top: .5rem;
+   }
+   .flex-receipts{
+      margin-right: -3%;
+   }
+
+}
+
+@media screen and (max-width:600px) {   
+   .receipts-line{
+      margin-right: 0%;
+   }
+
+}
+
+.receipts-h3{
+   max-width: 350px;
+   font-size: 1.4rem;
+   font-weight:$constant-weight;
+   line-height: 2rem;
+}
+.min-hide{
+   display: none;
+}
+
+@media screen and (max-width:800px) {
+   .min-hide{
+      display: block;
+   }
+}
+

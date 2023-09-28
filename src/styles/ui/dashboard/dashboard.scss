@@ -1,0 +1,74 @@
+//====================== Dashboar css======================
+.dashboard {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  font-family: "Butler";
+  font-style: normal;
+}
+
+.main-dashboard-content {
+  width: 100%;
+  display: flex;
+}
+
+.dashboard-content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 48px 0 0;
+  gap: 20px;
+  .dashboard_navbar {
+    .inner-navigation-bar {
+      padding-inline: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .menu {
+      display: none;
+    }
+  }
+  //   width: 100%;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin-right: 50px;
+  margin-left: 20px;
+}
+
+.dashboard-content-right {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  //   margin-right: 3em;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content-container {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .dashboard-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .dashboard-content-right {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .main-dashboard-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

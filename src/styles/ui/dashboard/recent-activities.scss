@@ -1,0 +1,117 @@
+.recent-activities-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    h2 {
+        margin: 20px 0;
+    }
+}
+
+
+.recent-activities-cont-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.recent-activities-title-holder {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.recent-activities-container-previcon {
+    span a {
+        font-size: 25px;
+        color: #4b5ffa;
+        font-weight: bold;
+    }
+}
+
+.recent-activities-title-holder {
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.recent-activities-cont-top a {
+    margin: 20px 0;
+    color: #4b5ffa;
+    font-size: 12px;
+}
+
+.recent-activities-container_content {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #cccccc6d;
+}
+
+.recent-activities-container_items {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.recent-activities-container_items__icon-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    background-color: #ccccccbd;
+    height: 25px;
+    border-radius: 25px;
+}
+
+.recent-activities-container_items__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    background-color: #EBF0FF;
+    height: 25px;
+    border-radius: 25px;
+    color: #575757e2;
+}
+
+.recent-activities-container_items__title {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title__span {
+    color: #455980;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.title__span a {
+    text-decoration: none;
+    color: #4B5FFA;
+}
+
+.title__p {
+    color: #ccccccde;
+    margin: 10px 0;
+}
+
+.view__container {
+    color: #4B5FFA;
+}
+
+.view-container a {
+    text-decoration: none;
+    color: #4B5FFA;
+    font-size: 12px;
+}
+
+.recent-activities-container-items-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 50px;
+}

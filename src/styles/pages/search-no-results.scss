@@ -1,0 +1,46 @@
+.No_Searh_Resault_container {
+    width: 100%;
+    display: flex;
+
+    .No_Searh_Resault {
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+        width: 45%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .No_Searh_Resault__text {
+        text-align: center;
+        width: 100%;
+
+        margin: 40px;
+        padding: 20px;
+
+        h2 {
+            color: #17294d;
+        }
+
+        border-left: 3px solid #cccccc;
+    }
+
+
+    .Search__Property__Map {
+        width: 55%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .No_Searh_Resault_container {
+        flex-direction: column;
+
+        .No_Searh_Resault {
+            width: 100%;
+        }
+    }
+
+
+}

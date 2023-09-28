@@ -1,0 +1,114 @@
+.my-account {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30px;
+  .home {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #4b5ffa;
+    margin-bottom: 20px;
+    .left-arrow {
+      font-size: 25px;
+    }
+    p {
+      margin-left: 10px;
+      color: #4b5ffa;
+    }
+  }
+  .profile-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 30px;
+      color: #17294d;
+    }
+    .avatar-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      background-color: #4b5ffa;
+      .avatar {
+        color: white;
+        font-size: 30px;
+      }
+    }
+  }
+  .name {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #455980;
+  }
+  .SideBarDataOne {
+    border-bottom: 0.839572px solid #ebf0ff;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    .data1-wrapper {
+      margin-top: 10px;
+      .data1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        border: 0.839572px solid #ebf0ff;
+        border-radius: 6.71658px;
+        padding: 10px 20px;
+        .right-arrow {
+          color: #4b5ffa;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  .data1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.839572px solid #ebf0ff;
+    border-radius: 6.71658px;
+    padding: 10px 20px;
+  }
+  .right-arrow {
+    color: #4b5ffa;
+    font-size: 25px;
+  }
+  .logout {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    background: #4b5ffa;
+    border: 0.839572px solid #ebf0ff;
+    border-radius: 6.71658px;
+    padding: 25px 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+  }
+}
+@media (min-width: 769px) {
+  .my-account {
+    display: none;
+  }
+}

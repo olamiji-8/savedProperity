@@ -1,0 +1,60 @@
+.close-modal-wrapper {
+  display: none;
+}
+.open-modal-wrapper {
+  display: flex;
+}
+.draft-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .modaltext {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #455980;
+    margin-top: 20px;
+  }
+  .draft-deltet-Botton {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    align-self: flex-end;
+    margin-top: 70px;
+
+    .btn-1,
+    .btn-2 {
+      padding: 0.5rem 1.3rem;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-1 {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      color: #4b5ffa;
+      background-color: white !important;
+    }
+    .btn-2 {
+      background: #4b5ffa;
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      color: #ffffff;
+    }
+  }
+  @media only screen and (max-width: 799px) {
+    .draft-deltet-Botton {
+      width: 100% !important;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.footer-container {
+  width: 100%;
+  background: #f5fbff;
+  line-height: 1.5;
+  .modal-container {
+    padding: 36px 60px;
+    width: max(350px, 40vw);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    line-height: 1.5;
+    p {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+
+      color: #455980;
+    }
+    a {
+      align-self: flex-end;
+      .btn {
+        padding: 12px 42px;
+      }
+    }
+  }
+  .footer--heading {
+    margin-block: 70px;
+    max-width: 270px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+  }
+  .searchbar {
+    display: flex;
+    margin-bottom: 263px;
+    gap: 9.7vw;
+    input {
+      width: 47vw;
+      height: 48px;
+      border: none;
+      border-bottom: 2px solid #c8cad4;
+      background-color: transparent;
+    }
+    input:focus {
+      outline: none;
+    }
+    .btn {
+      padding-inline: 3.2vw;
+    }
+  }
+}
+
+h4 {
+  color: #455980;
+}
+
+.footer-blocks h4 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 13px;
+}
+
+.footer-container {
+  padding: 2em 0;
+  width: 100%;
+  background: #f5fbff;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.footer-socials,
+.footer-support p {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.footer-socials {
+  color: #4b5ffa !important;
+}
+
+.footer-blocks h5 {
+  font-size: 24px;
+}
+
+.footer-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2em;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+  }
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.footer-blocks {
+  font-size: 16px;
+  position: relative;
+}
+
+.footer-blocks div {
+  padding: 10px 0;
+
+  a {
+    color: #455980 !important;
+  }
+}
+
+.store-cards {
+  color: #17294d;
+  padding: 10px !important;
+  border: 0.5px solid #455980;
+  margin: 8px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: #4b5ffa !important;
+
+  p {
+    font-size: 13px;
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+
+.copyright {
+  position: relative;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+
+  color: #4b5ffa !important;
+}

@@ -1,0 +1,66 @@
+.email-notification-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    h2 {
+        margin: 20px 0;
+    }
+}
+
+
+.email-notification-container_content {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.email-notification-container_items {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+.email-notification-container_items__title {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title__span {
+    color: #455980;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.title__p {
+    color: #ccccccde;
+    margin: 10px 0;
+}
+
+.date__container {
+    color: #4B5FFA;
+}
+
+.date-container a {
+    text-decoration: none;
+    color: #4B5FFA;
+    font-size: 12px;
+}
+
+.email-notification-container-items-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 50px;
+}
+
+.email-notification-clos__button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}

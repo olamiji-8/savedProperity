@@ -1,0 +1,278 @@
+@import './Service.scss';
+
+.Sec-Bg {
+    background-color: $secondary-bg-color;
+}
+.Service-Hero {
+    padding-block: 1rem;
+    .Container {
+        width: 90%;
+        margin: auto;
+
+    }
+    p {
+        color: $secondary-text-color;
+        font-size: 1rem;
+        margin-block: 20px;
+        line-height: 150%;
+    }
+
+    h1 {
+        color: $primary-text-color;
+        margin: auto;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    a {
+        display: inline-block;
+    }
+    .Mobile-Only {
+        a {
+            color: $highlight-color;
+        }
+        a.Ul {
+            text-decoration: underline ;
+        }
+    }
+    .Desktop-Only {
+        display: none;
+    }
+}
+.FeaturedServices-Section, .TopVendors-Section {
+    margin-block: 40px;
+    .ServiceCard {
+        height: 200px;
+    }
+}
+.Section-Header {
+    @include FlexAlignCenter();
+    justify-content: space-between;
+    max-width: 312px;
+    margin: auto;
+    margin-bottom: 30px;
+
+    h2 {
+        font-size: 20px;
+    }
+    a {
+        color: $highlight-color;
+        font-size: 16px;
+    }
+}
+.Pricing-Section {
+    padding-block: 40px;
+    .Pr {
+        max-width: 276px;
+        margin: auto;
+        text-align: center;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        P {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+            margin-block: 20px 45px
+        }
+    }
+    .PriceCard-List {
+        @include FlexAlignCenter();
+        gap: 40px 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .Price-Card {
+        max-width: 229px;
+        padding: 20px 40px;
+        background-color: white;
+        text-align: center;
+        img {
+            margin-block: 30px 30px;
+        }
+        .Duration {
+            font-size: 16px;
+        }
+        .Desc {
+            margin-block: 20px 60px;
+            font-size: 16px;
+            line-height: 150%;
+        }
+        a {
+            display: block;
+            color: #ffffff;
+            margin-top: 15px;
+            background-color: $highlight-color;
+            padding: .65rem;
+            text-transform: capitalize;
+        }
+    }
+}
+.Vendor-Detail {
+    max-width: 312px;
+    margin: 40px auto 60px auto;
+    .Back-Btn {
+        @include FlexAlignCenter(10px);
+        display: inline-flex;
+        color: $primary-text-color;
+    }
+}
+
+.VendorCard-Two {
+    text-align: center;
+    h2 {
+        color: $primary-text-color;
+        margin-top: 15px;
+    }
+    p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 44px;
+        color: #455980;
+    }
+    div {
+        @include FlexAlignCenter(1px);
+        justify-content: center;
+        background-color: #F8F8FE;
+        width: 200px;
+        margin: auto;
+        a {
+            width: 100px;
+            background-color: #EBF0FF;
+            padding: 0.8rem 1rem;
+            color: $highlight-color;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+}
+
+.Profile-Feedback {
+    margin-block: 60px 20px;
+}
+.VendorProfile {
+    margin-bottom: 40px;
+    p {
+        font-size: 16px;
+        line-height: 44px;
+    }
+    .Rating {
+        @include FlexAlignCenter(1px);
+    }
+}
+.Feedback {
+    text-align: center;
+    background-color: $secondary-bg-color;
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    h3 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 44px;
+        color: $primary-text-color;
+    }
+    .Stars {
+        margin-block: 10px 20px;
+    }
+    button {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+        background-color: $highlight-color;
+        border: none;
+        padding-block: 1rem;
+    }
+}
+.Portfolio-Section {
+    display: none;
+}
+@media (min-width: 576px) {
+    .Section-Header {
+        max-width: 486px;
+    }
+}
+
+@media (min-width: 768px) {
+    .Service-Hero {
+        text-align: center;
+        padding-block: 8rem;
+        .Container {
+            max-width: 644px;
+        }
+        .Desktop-Only {
+            display: unset;
+        }
+        .Mobile-Only {
+            display: none;
+        }
+    }
+
+    .Section-Header {
+        max-width: 636px;
+    }
+
+    .FeaturedServices-Section, .TopVendors-Section {
+        margin-bottom: 190px;
+    }
+    .Vendor-Detail {
+        max-width: 636px;
+    }
+    .Profile-Feedback {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-block: 50px 60px;
+    }
+    .VendorProfile, .Feedback {
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .Section-Header {
+        max-width: 967px;
+    }
+    .Vendor-Detail {
+        max-width: 972px;
+    }
+    .Feedback {
+        width: 100%;
+        max-width: 370px;
+        padding: 2rem;
+    }
+    .VendorProfile {
+        max-width: 500px;
+    }
+    .Portfolio-Section {
+        display: block;
+        .Portfolio-Items {
+            position: relative;
+            width: 972px;
+            height: 116px;
+            margin-top: 30px;
+            overflow: hidden;
+            .Arrow {
+                position: absolute;
+                top: 40%;
+                z-index: 100;
+            }
+            .prev {
+                left: 0;
+            }
+            .next {
+                right: 0;
+            }
+            .Portfolio-Card {
+                position: absolute;
+                top: 0;
+                width: 137px;
+                height: 116px;
+                transition: all 0.25s ease-in-out;
+                background-color: gray;
+            }
+        }
+    }
+}

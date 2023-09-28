@@ -1,0 +1,16 @@
+.draft-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 13rem;
+  p {
+    margin-top: 2rem;
+    font-family: 'butler';
+    font-size: 18px;
+    font-weight: bold;
+    width: 35%;
+    text-align: center;
+    color: #17294d;
+  }
+}

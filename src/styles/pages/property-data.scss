@@ -1,0 +1,38 @@
+.property-data-contianer {
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: 768px) {
+    margin-top: 70px;
+  }
+  .property-nav-control {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  .property-data-wrapper {
+    overflow-x: hidden;
+    margin: 20px 40px;
+    color: black;
+    .toggle-tab-wrapper {
+      display: flex;
+      align-items: center;
+      margin-top: 35px;
+    }
+    .item1,
+    .item2 {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 18px;
+      color: #17294d;
+      cursor: pointer;
+    }
+    .addBorder {
+      border-bottom: 3px solid #4b5ffa;
+    }
+    .item2 {
+      margin-left: 30px;
+    }
+  }
+}

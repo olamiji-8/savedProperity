@@ -1,0 +1,304 @@
+.Property__Popup__Container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+
+    .Property__Popup__description {
+        display: flex;
+        margin: 40px 0;
+
+        .Property__Close__Icon {
+            font-size: 20px;
+        }
+
+        .Property__desc__text {
+            display: flex;
+            flex-direction: column;
+            color: #253658;
+            margin-left: 40px;
+
+            span:nth-child(1) {
+                font-weight: 600;
+                font-size: 20px;
+            }
+
+            span:nth-child(2) {
+                font-weight: 600;
+                font-size: 15px;
+                color: #506388;
+            }
+        }
+    }
+
+    .Property__Popup__Picture__Container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 500px;
+        position: relative;
+
+
+        .Property__Popup__Pictures {
+            width: 95%;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            z-index: 10;
+
+
+
+
+            .Property__Popup__Pictures__main {
+                width: 70%;
+
+                .Search__Image {
+                    width: 100%;
+                    border-radius: 10px;
+                    height: 100%;
+                }
+            }
+
+            .Spacing {
+                width: 20px;
+            }
+
+            .Property__Popup__Pictures__secondary {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+
+                .Search__Image {
+                    width: auto;
+                    height: 160px;
+                    border-radius: 10px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        .Property__Popup__Pictures__Buy__Now {
+            width: 100%;
+            display: flex;
+            position: absolute;
+            background-color: white;
+            top: 320px;
+            border-radius: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            z-index: 100;
+            align-items: center;
+            padding: 20px;
+
+            .Property__popup__price {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+
+
+                .price {
+                    color: #4b5ffa;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                .Property__Bed_Bath {
+                    display: flex;
+                    align-items: center;
+
+                    .dot {
+                        height: 7px;
+                        width: 7px;
+                        border-radius: 7px;
+                        background-color: #4b5ffa;
+                        margin-right: 10px;
+                    }
+
+                    .text__color {
+                        color: #506388;
+                        margin-right: 10px;
+                    }
+
+                }
+            }
+
+            .Property_Keywords {
+                border-left: 2px solid #cccccc;
+                border-right: 2px solid #cccccc;
+                display: flex;
+                justify-content: space-evenly;
+                flex: 3;
+
+
+                span {
+                    border: 1px solid #cccccc;
+                    border-radius: 10px;
+                    padding: 10px 20px;
+                    color: #506388;
+                }
+            }
+
+            .Property__Buynow {
+                flex: 1;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                font-size: 25px;
+
+                .fav__icon {
+                    color: #4b5ffa;
+                }
+            }
+        }
+
+    }
+
+    .Property__Popup__Details__Container {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+
+
+        .Property__Popup__Details {
+            display: flex;
+            border-bottom: 1px solid #cccccc;
+            padding: 50px 0;
+
+
+            .Property__Details__title {
+                width: 45%;
+            }
+
+            .Property__Details__Description {
+                width: 55%;
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    color: #4b5ffa;
+                }
+
+                .Property__bedroom__bathrooms {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-top: 20px;
+                }
+
+                .text__color {
+                    color: #506388;
+                    margin-right: 5px;
+                    font-size: 16px;
+                }
+
+                .dot {
+                    height: 7px;
+                    width: 7px;
+                    border-radius: 7px;
+                    background-color: #4b5ffa;
+                    margin-right: 20px;
+                }
+
+
+            }
+        }
+
+        .mb {
+            margin-bottom: 20px;
+        }
+
+        .mt {
+            margin-top: 30px;
+        }
+
+
+        .Propety__rext {
+            color: #506388;
+        }
+
+
+        .Property__value {
+            color: #253658;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .Property__Space_Between {
+            display: flex;
+            width: 100%;
+
+        }
+
+        .Property___spacing_Child {
+            width: 50%;
+            padding: 0 30px 0 0;
+        }
+
+        a {
+            color: #4b5ffa;
+        }
+
+        .Tab {
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            .Tab__Header__Container {
+                display: flex;
+            }
+
+            .Tab__Header {
+                flex: 1;
+                color: #4b5ffa;
+                background: white;
+                border-radius: 10px 10px 0 0;
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            .Tab__Content__Container {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .Tab__Content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 50px 0;
+            }
+
+            .Tab__Content__Text {
+                width: 60%;
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .Tab__Content__Button {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding: 20px;
+            }
+        }
+    }
+
+}
+
+.Poperty__Popup__Similar__Listings {
+    display: flex;
+    flex-direction: column;
+
+
+    .property-card-container {
+        display: flex;
+        margin-top: 20px;
+    }
+
+
+}

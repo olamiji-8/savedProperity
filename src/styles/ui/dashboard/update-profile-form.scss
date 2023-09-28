@@ -1,0 +1,124 @@
+.form-input-container {
+    display: flex;
+    flex-direction: column;
+    color: #17294E;
+}
+
+
+.form-input-container__half {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.form-input__value {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    border-bottom: 2px solid black;
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    input {
+        background-color: rgb(235, 240, 255);
+        padding: 15px;
+        border: none;
+    }
+
+}
+
+
+.form-input-container__full {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 2px solid black;
+
+
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    input {
+        background-color: rgb(235, 240, 255);
+        padding: 15px;
+        border: none;
+    }
+}
+
+.form-input-container__half__password {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 15px 0;
+
+    span {
+        margin-top: 40px;
+        margin-left: 10px;
+        color: #4B5FFA;
+        font-weight: 500;
+    }
+
+    a {
+        color: #4b5ffa;
+        font-weight: bold;
+    }
+}
+
+
+.form-input-container button {
+    background-color: #4B5FFA;
+    padding: 15px;
+    font-size: 12px;
+    width: 200px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width:768px) {
+    .form-input-container button {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .form-input-container__half {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0;
+    }
+
+    .form-input__value {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-bottom: 2px solid black;
+
+        label {
+            margin: 10px 0;
+        }
+
+        input {
+            background-color: rgb(235, 240, 255);
+            padding: 15px;
+            border: none;
+        }
+
+    }
+
+
+    .form-input-container__half__password {
+        margin: 0;
+        position: relative;
+
+        span {
+            position: absolute;
+            right: 10px;
+            top: 15px;
+        }
+    }
+}
